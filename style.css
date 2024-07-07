@@ -202,7 +202,7 @@ padding-top: 20px;
     flex-wrap: wrap;
     justify-content: space-evenly;
     /* margin-top: 8%; */
-    height: 230px;
+    height: 243px;
     width: 100%;
 }
 .aboutus h2{
@@ -273,11 +273,11 @@ padding-top: 20px;
 /* media query */
 
 @media (max-width:435px) {
-    .footer{
+    /* .footer{
         flex-direction: column;
         text-align: center;
         row-gap: 18px;
-    }
+    } */
     .aboutus p{
         font-size: 10px;
     }
@@ -341,8 +341,39 @@ padding-top: 20px;
         font-size: 22px;
         margin-top: 30px;
      } */
+
+     .contactus h3{
+        font-size: 18px;
+        margin-right: 7rem;
+     }
+     .contactus h4{
+        font-size: 18px;
+        margin-right: 1.5rem;
+     }
+}
+
+@media (max-width:650px){
+    .aboutus{
+        /* flex-direction: column; */
+        text-align: center;
+        row-gap: 18px;
+        margin-top: 1rem;
+    }
+    .aboutus h4{
+        margin-bottom: 1rem;
+    }
+    .contactus{
+        /* flex-direction: column; */
+        text-align: center;
+        row-gap: 18px;
+    }
+    .contactus h3{
+        margin-left: 7rem;
+        margin-top: 1.2rem;
+    }
+.followus{
+    display: none;
+}
 }
 
 
-
-/* contact us ko thoda sa media query me set krna h  */

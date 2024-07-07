@@ -18,6 +18,7 @@ html{
 body{
     /* background: var(--bg-color); */
     font-family: "poppins" , sans-serif;
+    background: whitesmoke;
     /* color: var(--text-color); */
 }
 html::-webkit-scrollbar{

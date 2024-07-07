@@ -18,7 +18,7 @@ html{
 body{
     /* background: var(--bg-color); */
     font-family: "poppins" , sans-serif;
-    background: whitesmoke;
+    background: #ddd;
     /* color: var(--text-color); */
 }
 html::-webkit-scrollbar{
@@ -378,3 +378,40 @@ padding-top: 20px;
 }
 
 
+
+
+
+/* About Page */
+
+
+.section{
+    width: 100%;
+    height: 100vh;
+    background: #ddd;
+}
+.container{
+width: 80%;
+display: block;
+margin: auto;
+padding-top: 100px;
+}
+.content-section{
+    float: right;
+    width: 40%;
+}
+.image-section{
+    float: left;
+    width: 55%;
+}
+.image-section img{
+    width: 90%;
+    height: auto;
+}
+.content-section .title{
+    text-transform: uppercase;
+    font-size: 28px
+}
+.content-section .content h3{
+    margin-top: 20px;
+    color: #5d5d5d;
+}

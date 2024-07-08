@@ -1804,15 +1804,7 @@ let cardData = {
 let divCards =  document.getElementById("cards");
 let selectItems = document.getElementById("selection");
 
-// let arraY = []
-// for (const x of cardData) {
-//    if (!arraY.includes(x.category)) {
-//       selectItems.innerHTML += `
-//       <option value="${x.category}">x.category</option>
-//       `;
-//       arraY.push(x.category);
-//    }
-// }
+
 function showCards() {
    for (let i = 0; i < cardData.products.length; i++) {
        divCards.innerHTML += `

@@ -440,9 +440,52 @@ margin-top: 30px;
 }
 .content-section .social{
     margin-top: 40px;
+    margin-bottom: 30px;
 }
 .content-section .social i{
     color: #a52a2a;
     font-size: 30px;
     padding: 0px 10px;
+}
+.content-section .social i:hover{
+    color: #3d3d3d;
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+        }
+        .content-section{
+            float: none;
+            display: block;
+            margin: auto;
+            width: 100%;
+        }
+        .image-section{
+            float: none;
+            width: 100%;
+           
+        }
+        .image-section img{
+            margin: auto;
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .content-section .title{
+            text-align: center;
+            font-size: 19px;
+        }
+        .content-section .content .button{
+            text-align: center;
+        }
+        .content-section .content .button a{
+             padding: 9px 30px;
+        }
+        .content-section .social{
+            text-align: center;
+        }
 }

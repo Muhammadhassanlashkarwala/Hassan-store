@@ -2,7 +2,7 @@ let cardData = {
    "products":[
       {
          "id":1,
-         "title":"Essence Mascara Lash Princess",
+         "title":"Essence Mascara",
          "description":"The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.",
          "category":"beauty",
          "price":9.99,
@@ -62,7 +62,7 @@ let cardData = {
       },
       {
          "id":2,
-         "title":"Eyeshadow Palette with Mirror",
+         "title":"Eyeshadow Mirror",
          "description":"The Eyeshadow Palette with Mirror offers a versatile range of eyeshadow shades for creating stunning eye looks. With a built-in mirror, it's convenient for on-the-go makeup application.",
          "category":"beauty",
          "price":19.99,
@@ -798,7 +798,7 @@ let cardData = {
       },
       {
          "id":14,
-         "title":"Knoll Saarinen Executive Conference Chair",
+         "title":"Knoll Chair",
          "description":"The Knoll Saarinen Executive Conference Chair is a modern and ergonomic chair, perfect for your office or conference room with its timeless design.",
          "category":"furniture",
          "price":499.99,
@@ -860,7 +860,7 @@ let cardData = {
       },
       {
          "id":15,
-         "title":"Wooden Bathroom Sink With Mirror",
+         "title":"Wooden Sink Mirror",
          "description":"The Wooden Bathroom Sink with Mirror is a unique and stylish addition to your bathroom, featuring a wooden sink countertop and a matching mirror.",
          "category":"furniture",
          "price":799.99,

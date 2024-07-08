@@ -512,3 +512,13 @@ margin-top: 30px;
             text-align: center;
         }
 }
+
+
+/* Cards  */
+
+@media only screen and (max-width: 420px){
+
+    .box{
+        width: 300px;
+    }
+}

@@ -1802,10 +1802,46 @@ let cardData = {
    "limit":30
 }
 let divCards =  document.getElementById("cards");
-let selectItems = document.getElementById("selection");
+// let select = document.querySelector('.select');
+// let uniqueCategory = [];
+// select.innerHTML = <option value="All Products">All Products</option>;
+// for (const x of data.products) {
+//     if (!uniqueCategory.includes(x.category)) {
+//         select.innerHTML += <option value="${x.category}">${x.category}</option>;
+//         uniqueCategory.push(x.category);
+//     }
+// }
 
+// function attachCartEventListeners() {
+//     let cartBtn = document.querySelectorAll('#cart');
+//     for (let i = 0; i < cartBtn.length; i++) {
+//         cartBtn[i].addEventListener('click', (event) => {
+//             const productIndex = event.target.getAttribute('data-index');
+//             Swal.fire({
+//                 title: "Are you sure?",
+//                 text: "You want to place order",
+//                 icon: "warning",
+//                 showCancelButton: true,
+//                 confirmButtonColor: "#3085d6",
+//                 cancelButtonColor: "#d33",
+//                 confirmButtonText: "Yes, Place Order!"
+//             }).then((result) => {
+//                 if (result.isConfirmed) {
+//                     Swal.fire({
+//                         title: `${cardData.products[productIndex].title}`,
+//                         text: "Your Order Has Been Placed",
+//                         icon: "success"
+//                     });
+//                 }
+//             });
+//         });
+//     }
+// }
+
+// attachCartEventListeners();
 
 function showCards() {
+   
    for (let i = 0; i < cardData.products.length; i++) {
        divCards.innerHTML += `
            <div class="box">
@@ -1819,6 +1855,5 @@ function showCards() {
            </div>
        `   
    }
-   
 }
 showCards()

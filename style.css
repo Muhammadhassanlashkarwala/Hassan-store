@@ -211,7 +211,7 @@ text-align: center;
 /* footer start */
 .footer{
     position: absolute;
-    top: 3310px;
+    top: 5310px;
     padding-top: 40px;
     /* background-color: rgb(61, 115, 250); */
     background: rgba(0, 0, 0, 0.7);
@@ -320,13 +320,13 @@ text-align: center;
 @media (max-width:1270px){
     .footer{
         position: absolute;
-        top: 4910px;
+        top: 7910px;
     }
 }
 @media (max-width:849px){
     .footer{
         position: absolute;
-        top: 9710px;
+        top: 15710px;
     }
 }
 @media (max-width:750px){

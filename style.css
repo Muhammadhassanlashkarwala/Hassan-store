@@ -29,6 +29,7 @@ html::-webkit-scrollbar{
  background: rgba(0, 0, 0, 0.7);
  filter: drop-shadow(10px);
  display: flex;
+ flex-wrap: wrap;
  justify-content: space-between;
  align-items: center;
  z-index: 100;
@@ -219,9 +220,7 @@ text-align: center;
     position: absolute;
     top: 5310px;
     padding-top: 40px;
-    /* background-color: rgb(61, 115, 250); */
     background: rgba(0, 0, 0, 0.7);
-    /* border-top: 3px solid #AAB8C2; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;

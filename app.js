@@ -364,7 +364,7 @@ let cardData = {
       },
       {
          "id":7,
-         "title":"Chanel Coco Noir Eau De",
+         "title":"Chanel Noir Eau De",
          "description":"Coco Noir by Chanel is an elegant and mysterious fragrance, featuring notes of grapefruit, rose, and sandalwood. Perfect for evening occasions.",
          "category":"fragrances",
          "price":129.99,
@@ -736,7 +736,7 @@ let cardData = {
       },
       {
          "id":13,
-         "title":"Bedside Table African Cherry",
+         "title":"Bedside Table Cherry",
          "description":"The Bedside Table in African Cherry is a stylish and functional addition to your bedroom, providing convenient storage space and a touch of elegance.",
          "category":"furniture",
          "price":299.99,
@@ -1802,7 +1802,6 @@ let cardData = {
    "limit":30
 }
 let divCards =  document.getElementById("cards");
-let select = document.querySelector('.select');
 
 function showCards() {
    
@@ -1821,3 +1820,37 @@ function showCards() {
    }
 }
 showCards()
+
+let category = document.getElementById('selection')
+
+   category.onchange = () => {
+   let selectedCategory = category.value;
+   divCards.innerHTML = ""
+    
+   for (let i of cardData.products) {
+     if (i.category === selectedCategory) {
+      divCards.innerHTML += `
+      <div class="box">
+          <img id="product" src="${i.thumbnail}" alt="">
+          <h1 id="title"><span>Title: </span> ${i.title}</h1>
+          <h4 id='category'><span>Category: </span>${i.category}</h4>
+          <p><span>Price: </span>${i.price}$</p>
+          <p><span>Rating: </span>${i.rating}</p>
+          <p><span>Return Policy: </span>${i.returnPolicy}</p>
+          <button id="cart">Add To Cart</button>
+      </div>`;
+     } else if (selectedCategory == "All Category") {
+      divCards.innerHTML += `
+      <div class="box">
+          <img id="product" src="${i.thumbnail}" alt="">
+          <h1 id="title"><span>Title: </span> ${i.title}</h1>
+          <h4 id='category'><span>Category: </span>${i.category}</h4>
+          <p><span>Price: </span>${i.price}$</p>
+          <p><span>Rating: </span>${i.rating}</p>
+          <p><span>Return Policy: </span>${i.returnPolicy}</p>
+          <button id="cart">Add To Cart</button>
+      </div>
+  `   
+     }
+   }
+ };

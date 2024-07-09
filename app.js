@@ -1822,8 +1822,8 @@ function showCards() {
 showCards()
 
 let category = document.getElementById('selection')
-
-   category.onchange = () => {
+let footer = document.getElementById("contactus")
+category.onchange = () => {
    let selectedCategory = category.value;
    divCards.innerHTML = ""
     
@@ -1839,18 +1839,27 @@ let category = document.getElementById('selection')
           <p><span>Return Policy: </span>${i.returnPolicy}</p>
           <button id="cart">Add To Cart</button>
       </div>`;
-     } else if (selectedCategory == "All Category") {
+
+      if(divCards.children.length == 5){
+        footer.style.top = "1180px"
+      }else if (divCards.children.length == 15){
+footer.style.top = " 2720px"
+      }
+      console.log(divCards.children.length); 
+   } else if (selectedCategory == "All Category") {
       divCards.innerHTML += `
       <div class="box">
-          <img id="product" src="${i.thumbnail}" alt="">
+      <img id="product" src="${i.thumbnail}" alt="">
           <h1 id="title"><span>Title: </span> ${i.title}</h1>
           <h4 id='category'><span>Category: </span>${i.category}</h4>
           <p><span>Price: </span>${i.price}$</p>
           <p><span>Rating: </span>${i.rating}</p>
           <p><span>Return Policy: </span>${i.returnPolicy}</p>
           <button id="cart">Add To Cart</button>
-      </div>
-  `   
+          </div>
+          `
+footer.style.top = "5310px"
+
      }
    }
- };
+};

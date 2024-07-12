@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CZ:wght@100..400&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -42,6 +44,10 @@ html::-webkit-scrollbar{
     transition: 0.3s ease-in-out;
 
 }
+.navbar-brand{
+    font-family: "Playwrite CZ", 'cursive';
+    font-weight: bold;
+}
 /* section cards */
 
 #cards{
@@ -50,7 +56,7 @@ html::-webkit-scrollbar{
     justify-content: center;
     align-items: center;  
     position: absolute;
-    top: 100px;
+    top: 110px;
   }  
 .box{
     height: 550px;
@@ -88,7 +94,6 @@ text-align: center;
 }
 .box #cart{
       margin-top: 20px;
-      /* background: white; */
       background: black;
       text-align: center;
       align-items: center;
@@ -200,6 +205,11 @@ text-align: center;
     }
     #copyright{
         font-size: 10px;
+    }
+}
+@media (max-width:450px){
+   .navbar-brand{
+        font-size: 12px !important;
     }
 }
 @media (max-width: 550px) {

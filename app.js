@@ -1801,6 +1801,7 @@ let cardData = {
    "skip":0,
    "limit":30
 }
+
 let divCards =  document.getElementById("cards");
 
 function showCards() {
@@ -1839,11 +1840,11 @@ category.onchange = () => {
           <p><span>Return Policy: </span>${i.returnPolicy}</p>
           <button id="cart">Add To Cart</button>
       </div>`;
-
       if(divCards.children.length == 5){
-        footer.style.top = "1180px"
-      }else if (divCards.children.length == 15){
-footer.style.top = " 2720px"
+        footer.style.top = "1270px" ;
+      }
+      else if (divCards.children.length == 15){
+footer.style.top = " 2980px"
       }
       console.log(divCards.children.length); 
    } else if (selectedCategory == "All Category") {
@@ -1863,3 +1864,4 @@ footer.style.top = "5310px"
      }
    }
 };
+

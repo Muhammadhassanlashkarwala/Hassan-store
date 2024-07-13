@@ -1815,7 +1815,7 @@ function showCards() {
                <p><span>Price: </span>${cardData.products[i].price}$</p>
                <p><span>Rating: </span>${cardData.products[i].rating}</p>
                <p><span>Return Policy: </span>${cardData.products[i].returnPolicy}</p>
-               <button id="cart">Add To Cart</button>
+               <button id="cart" class="btn">Add To Cart</button>
            </div>
        `   
    }
@@ -1838,7 +1838,7 @@ category.onchange = () => {
           <p><span>Price: </span>${i.price}$</p>
           <p><span>Rating: </span>${i.rating}</p>
           <p><span>Return Policy: </span>${i.returnPolicy}</p>
-          <button id="cart">Add To Cart</button>
+          <button id="cart" class="btn">Add To Cart</button>
       </div>`;
       if(divCards.children.length == 5){
         footer.style.top = "1270px" ;
@@ -1856,7 +1856,7 @@ footer.style.top = " 2980px"
           <p><span>Price: </span>${i.price}$</p>
           <p><span>Rating: </span>${i.rating}</p>
           <p><span>Return Policy: </span>${i.returnPolicy}</p>
-          <button id="cart">Add To Cart</button>
+          <button id="cart" class="btn">Add To Cart</button>
           </div>
           `
 footer.style.top = "5310px"
@@ -1865,3 +1865,13 @@ footer.style.top = "5310px"
    }
 };
 
+let btn = document.querySelectorAll(".btn")
+btn.forEach((e)=>{
+e.addEventListener("click",()=>{
+   Swal.fire({
+      title: "Cart add Successfully",
+      className: "styleTitle",
+      icon: "success"
+    });
+})
+})
